@@ -1,8 +1,8 @@
-# Use official PHP 8.2 Apache base image
+# Use official PHP 8.2 Apache image
 FROM php:8.2-apache
 
-# Install libzip-dev and zip tools, then compile the zip extension
-# (Note: simplexml, xml, and dom are already pre-compiled in php:8.2-apache)
+# Install libzip-dev and zip tools, then install and enable the zip extension.
+# (Note: simplexml, dom, and xml are already built into php:8.2-apache by default)
 RUN apt-get update && apt-get install -y --no-install-recommends \
     libzip-dev \
     zip \
@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Enable Apache mod_rewrite
 RUN a2enmod rewrite
 
-# Configure PHP limits for processing large batches
+# Configure PHP runtime & file upload directives
 RUN { \
     echo 'upload_max_filesize = 128M'; \
     echo 'post_max_size = 128M'; \
@@ -25,17 +25,17 @@ RUN { \
 # Set working directory
 WORKDIR /var/www/html
 
-# Copy application files into container
+# Copy application files into the container
 COPY . /var/www/html/
 
-# Set proper permissions for Apache user
+# Create and configure secure storage directory permissions
 RUN mkdir -p /var/www/html/secure_data \
     && chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html \
     && chmod -R 775 /var/www/html/secure_data
 
-# Expose HTTP port
+# Expose standard web port
 EXPOSE 80
 
-# Start Apache web server
+# Start Apache in foreground
 CMD ["apache2-foreground"]
