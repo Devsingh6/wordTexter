@@ -1,7 +1,7 @@
 <?php
 /**
  * Word Texter - Next-Gen Corporate & Office Automation Suite
- * Developed & All Rights Reserved: Devsingh.M
+ * Developed & All Rights Reserved: Devsingh.m
  * 100% Responsive for All Mobile Phones, Tablets & Windows OS
  */
 
@@ -345,7 +345,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <title>Word Texter &bull; Document Automation Suite</title>
+    <title>Word Texter &bull; Office & Compliance Automation Suite</title>
     <!-- Cross-Browser Responsive Meta & Futuristic Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -959,8 +959,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <!-- Office Floating Elements Watermarks in Background -->
 <div class="office-bg-decor office-decor-1">&#128188; OFFICE AUTOMATION</div>
-<div class="office-bg-decor office-decor-2">&#128203; All &bull; Documents</div>
-<div class="office-bg-decor office-decor-3">&#128220; Word</div>
+<div class="office-bg-decor office-decor-2">&#128203; Word &bull; Documents</div>
+<div class="office-bg-decor office-decor-3">&#128220; Editor</div>
 
 <div class="app-container">
     
@@ -968,7 +968,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="brand-header-wrap">
         <div class="dev-badge-top">
             <span class="pulse-core"></span>
-            <span class="dev-badge-text">&#128187; AUTOMATED DOCUMENT SUITE</span>
+            <span class="dev-badge-text">&#128187; AUTOMATED Word DOCUMENT SUITE</span>
         </div>
         
         <!-- Colorful Glowing Title -->
@@ -981,7 +981,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         
         <p class="brand-subtext">
-            High-Performance <span class="txt-cyan">Office Document Automation</span> &bull; <span class="txt-pink">Address Replacer</span> for Edit Only Word Documents with <span class="txt-emerald">Zero-Corruption XML Precision</span>.
+            High-Performance <span class="txt-cyan">Office Document Automation</span> &bull; <span class="txt-pink"> Address Replacer</span> for Only Word Documents with <span class="txt-emerald">Zero-Corruption XML Precision</span>.
         </p>
     </div>
 
