@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  word-texter:
+    build: .
+    container_name: word_texter_app
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    volumes:
+      - ./secure_data:/var/www/html/secure_data
